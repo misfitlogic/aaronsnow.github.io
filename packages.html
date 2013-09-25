@@ -1,27 +1,113 @@
-<table>
-	<thead>
-		<tr>
-			<th>Project</th>
-			<th>Agency</th>
-			<th>Point of Contact</th>
-			<th>Usage</th>
-			<th>Last Updated</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Python 2.7</td>
-			<td>GSA</td>
-			<td>Robert Read, robert.read@gsa.gov</td>
-			<td>Used in production beta site launched 2013-09-26</td>
-			<td>2013-09-24</td>
-		</tr>
-		<tr>
-			<td>Solr 4.4.0</td>
-			<td>GSA</td>
-			<td>Robert Read, robert.read@gsa.gov</td>
-			<td>Used in production beta site launched 2013-09-26</td>
-			<td>2013-09-24</td>
-		</tr>
-	</tbody>
-</table>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<!--
+ 	<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen" />
+	<link rel="stylesheet" href="stylesheets/pygment_trac.css" media="screen" />
+	<link rel="stylesheet" href="stylesheets/print.css" media="print" />
+ -->
+
+	<script src="javascripts/jquery-1.10.2.min.js"></script>
+	<script src="javascripts/list.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<title>Federal Government Software Project Reuse Security Attitude</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="starter-template row">
+			<h1>Federal Government Software Project Reuse Security Attitude</h1>
+			<p>Blurb goes here</p>
+		</div>
+
+		<div id="entry-list">
+
+			<div class="row" style="margin-bottom:10px;">
+					<input type="text" class="search form-control" placeholder="Search" />
+			</div>
+
+			<div class="row">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th><span class="sort" data-sort="project">Project</span></th>
+							<th><span class="sort" data-sort="agency">Agency</span></th>
+							<th><span class="sort" data-sort="contact">Point of Contact</span></th>
+							<th><span class="sort" data-sort="usage">Usage</span></th>
+							<th><span class="sort" data-sort="updated">Last Updated</span></th>
+						</tr>
+					</thead>
+					<tbody class="list">
+						<tr>
+							<td class="project">Python 2.7</td>
+							<td class="agency">GSA</td>
+							<td class="contact">Robert Read, robert.read@gsa.gov</td>
+							<td class="usage">Used in production beta site http://pricespaid.acquisition.gov launched 2013-09-26</td>
+							<td class="updated">2013-09-24</td>
+						</tr>
+						<tr>
+							<td class="project">Solr 4.4.0</td>
+							<td class="agency">GSA</td>
+							<td class="contact">Robert Read, robert.read@gsa.gov</td>
+							<td class="usage">Used in production beta site http://pricespaid.acquisition.gov launched 2013-09-26</td>
+							<td class="updated">2013-09-24</td>
+						</tr>
+						<tr>
+							<td class="project">Red Hat Enterprise Linux Server release 5.9 (Tikanga)</td>
+							<td class="agency">GSA</td>
+							<td class="contact">Robert Read, robert.read@gsa.gov</td>
+							<td class="usage">Used in production beta site http://pricespaid.acquisition.gov launched 2013-09-26</td>
+							<td class="updated">2013-09-24</td>
+						</tr>
+						<tr>
+							<td class="project">PHP 5</td>
+							<td class="agency">SBA</td>
+							<td class="contact">Aaron Snow, aaron.snow@gsa.gov</td>
+							<td class="usage">Used in production site http://rfpez.sba.gov launched January 2013</td>
+							<td class="updated">2013-09-24</td>
+						</tr>
+						<tr>
+							<td class="project">Laravel 3.2.12</td>
+							<td class="agency">SBA</td>
+							<td class="contact">Aaron Snow, aaron.snow@gsa.gov</td>
+							<td class="usage">Used in production site http://rfpez.sba.gov launched January 2013</td>
+							<td class="updated">2013-09-24</td>
+						</tr>
+						<tr>
+							<td class="project">MySQL 5.5.15</td>
+							<td class="agency">SBA</td>
+							<td class="contact">Aaron Snow, aaron.snow@gsa.gov</td>
+							<td class="usage">Used in production site http://rfpez.sba.gov launched January 2013</td>
+							<td class="updated">2013-09-24</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+var options = {
+  valueNames: ['project', 'agency', 'contact', 'usage', 'updated']
+};
+
+var entryList = new List('entry-list', options);
+
+</script>
+
+</body>
+</html>
