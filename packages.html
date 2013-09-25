@@ -4,38 +4,34 @@
 	<meta charset='utf-8'>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-<!--
- 	<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen" />
-	<link rel="stylesheet" href="stylesheets/pygment_trac.css" media="screen" />
-	<link rel="stylesheet" href="stylesheets/print.css" media="print" />
- -->
+	<title>Secure Packages Reuse Project ("SecPrep")</title>
 
-	<script src="javascripts/jquery-1.10.2.min.js"></script>
-	<script src="javascripts/list.min.js"></script>
-
-	<!-- Latest compiled and minified CSS -->
+	<!-- CSS -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- JS -->
+	<script src="javascripts/jquery-1.10.2.min.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
+	<script src="javascripts/list.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<title>GSA Secure Packages Reuse Project ("SecPrep")</title>
 </head>
 
 <body>
 	<div class="container">
 		<div class="starter-template row">
-			<h1>GSA Secure Packages Reuse Project ("SecPrep")</h1>
-			<p>Created to help innovators and implementers in the 
-			government speed up the security clearance process by quickly identifying software 
-			packages that have been previously approved. It is a simple list of software and 
-			web development tools that have cleared security hurdles and have 
-			been deployed in production environments that any knowledgeable person can contribute to. If you 
-			know of a deployed system, please contribute to this list.</p>
+			<h1>Secure Packages Reuse Project ("SecPrep")</h1>
+			<p>
+				Created to help innovators and implementers in the U.S.
+				government speed up the security clearance process by quickly identifying software 
+				packages that have been previously approved. It is a simple list of software and 
+				web development tools that have cleared security hurdles and have 
+				been deployed in production environments that any knowledgeable person can contribute to.
+			</p>
+			<p>
+				If you know of a deployed system, please contribute to this list. For now, this means 
+				editing the HTML and submitting a pull request. Thank you!</p>
 		</div>
 
 		<div id="entry-list">
@@ -111,15 +107,13 @@
 		</div>
 	</div>
 
-<script type="text/javascript">
-
-var options = {
-  valueNames: ['project', 'agency', 'contact', 'usage', 'ato', 'updated']
-};
-
-var entryList = new List('entry-list', options);
-
-</script>
+	<script type="text/javascript">
+		// set options for listjs
+		var options = {
+		  valueNames: ['project', 'agency', 'contact', 'usage', 'ato', 'updated']
+		};
+		var entryList = new List('entry-list', options);
+	</script>
 
 </body>
 </html>
